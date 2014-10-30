@@ -19,7 +19,14 @@ if ($query) {
 }
 else {
 	echo "database already exists.";
- 
+ // since a datebase exists already, this else statent runs
 }
+
+$query = $connection->query("CREATE TABLE posts ("
+	."id int(11) NOT NULL AUTO_INCREMENT,"
+	."title varchar(255) NOT NULL,"
+	."post text NOT NULL,"
+	. "PRIMARY KEY (id) )");
+// created a query and a table
 $connection->close();
 ?>
