@@ -12,4 +12,7 @@
 	<textarea name="post">
 	</textarea>
 </div>
+<div>
+	<button type="submit">Submit</button>
+</div>
 </form>
