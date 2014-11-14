@@ -1,6 +1,6 @@
 <?php
 // this goes and finds a file once
-require_once (__DIR__ . "/../model/database.php");
+require_once (__DIR__ . "/../model/config.php");
 
 // checks if their is a connection error
 $connection = new mysqli($host, $username, $password);
