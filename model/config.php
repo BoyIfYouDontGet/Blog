@@ -6,4 +6,8 @@ $host = "localhost";
 $username = "root";
 $password = "root";
 $database = "blog_db";
+/// this variable contains all the functions (open connection close connection etc. )
+$connection = new Database ($host, $username,$password, $database);
+
+
 ?>

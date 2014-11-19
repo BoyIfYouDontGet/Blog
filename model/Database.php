@@ -26,7 +26,13 @@ public function closeConnecion (){
 }
 
 public function query ($string) {
-	
+	$this->openConnection();
+// queys the  database
+$query = $this->connection->query($string);
+
+$this->closeConnecion();
+
+return $query;
 }
 
 }

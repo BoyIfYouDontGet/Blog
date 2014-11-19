@@ -1,13 +1,3 @@
 body {
 	background-color:red;
-
-}
-button {
-
-}
-div {
-
-}
-label {
-
-}
+@media (max-width: 320px)
