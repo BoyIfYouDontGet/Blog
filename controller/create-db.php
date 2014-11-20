@@ -4,7 +4,7 @@ require_once (__DIR__ . "/../model/config.php");
 
 // checks if their is a connection error
 
-}
+
 
 $query = $connection->query("CREATE TABLE posts ("
 	."id int(11) NOT NULL AUTO_INCREMENT,"

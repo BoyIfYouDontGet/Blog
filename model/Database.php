@@ -7,8 +7,9 @@ private $host;
 private $password;
 private $username;
 private $database;
-
-public function __construct ($host, $username, $password, $database)  { $this->host = $host; $this->username = $username; $this->password = $password;  $this->database = $database;
+public $error;
+public function __construct ($host, $username, $password, $database)  {
+	$this->host = $host; $this->username = $username; $this->password = $password;  $this->database = $database;
 
 
 $this->connection = new mysqli($host, $username, $password);
@@ -31,15 +32,16 @@ else {
 
 
 }
-// this mysqli checks if the connection works, if it doesnt, then the program dies.
-public function openConnection () {
-$this ->connection = new mysqli ($this->host, $this->username, $this->password, $this->database);
 }
+// this mysqli checks if the connection works, if it doesnt, then the program dies.
+public function openConnection (){
+$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
+
 if ($this->connection->connect_error) {
 	die("<p>Error: " . $this->connection->connect_error . "</p>");
 }
-
-public function closeConnecion (){
+}
+public function closeConnection (){
 	// this if statemnet checks to see if we able open up a connection. The isset checks to see if theres something inside the variable. If there is not isset then isset returns no
   if (isset($this->connection)) {
     $this->connection->close();
@@ -51,7 +53,11 @@ public function query ($string) {
 // querys the  database
 $query = $this->connection->query($string);
 
-$this->closeConnecion();
+if(!$query) {
+	$this->error = $this->connection->error;
+}
+
+$this->closeConnection();
 
 return $query;
 }
