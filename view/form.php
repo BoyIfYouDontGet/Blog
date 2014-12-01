@@ -1,7 +1,7 @@
 <?php
 require_once(__DIR__ . "/../model/config.php");
 ?>
-<h1> Create  Blog post </h1>
+<h1> <p>Create  Blog post</p><p><small>-Developer </small></p> </h1>
 
 <form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
 <div>
