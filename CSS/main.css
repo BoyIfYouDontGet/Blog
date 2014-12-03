@@ -6,22 +6,3 @@ body {
   background-size:cover; 
 }
 
-h1 {
-  font-family:'Chango';
-  font-size:50px;  
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  /* set the background image */
-  background:url(https://unsplash.imgix.net/photo-1416339442236-8ceb164046f8?q=75&fm=jpg&s=8eb83df8a744544977722717b1ea4d09);
-  background-position:bottom;
-  background-size:cover;
-
-  /* set the transition speed */
-  transition:2s ease all;
-}
-
-/* handle what happens on hover */
-h1:hover {
-  background-position:top;
-}
