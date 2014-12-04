@@ -10,6 +10,7 @@ $query = $_SESSION["connection"]->query("CREATE TABLE posts ("
 	."id int(11) NOT NULL AUTO_INCREMENT,"
 	."title varchar(255) NOT NULL,"
 	."post text NOT NULL,"
+	. "DateTime datetime NOT NULL,"
 	. "PRIMARY KEY (id) )");
 // created a query and a table
 //checks to see if the table exists in our database
