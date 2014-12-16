@@ -1,8 +1,6 @@
 body {
-  padding-top:50px;
-  background:url(https://unsplash.imgix.net/photo-1416339442236-8ceb164046f8?q=75&fm=jpg&s=8eb83df8a744544977722717b1ea4d09);
-
+  background-color: white;
   /* make our image 100% width */
-  background-size:cover; 
+  
 }
 
