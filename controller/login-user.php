@@ -8,16 +8,14 @@ $query = $_SESSION["connection"]->query("SELECT salt, password FROM users WHERE 
 if($query->num_rows == 1) {
 	$row = $query->fetch_array();
 // this if statement runs the login info in the database and the 3 equals signs check to see if the login info matches
-	if ($row["password"] === crypt($password, $row["salt"])) {
+	if ($row["password"] === crypt ($password, $row["salt"])) {
 		$_SESSION["authenticated"] = true;
 		echo "<p> Login Successful </p>";
 	}
-	//this else statement says there was a login in error if the login info doesnt match
-	else {
-		echo "Invalid username and password</p>";
-	}
+else {
+	echo "<p>Invalid username and password</p>";
 }
-	else {
-		echo "<p>Invalid useranme and password</p>";
-	}
-
+}
+else {
+	echo "<p>Invalid username and password</p>";
+}
