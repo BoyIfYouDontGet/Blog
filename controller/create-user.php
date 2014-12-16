@@ -12,16 +12,16 @@
 
 // this variable creates a hash so that passwords are unique and protected
 	$salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "$";
-	$hashedPassword = crypt ($password, $salt);
+	$hashedPassword = crypt($password,$salt);
 //creating a query so that i can store the encrypted passwords in the database using sessions
 	$query = $_SESSION["connection"]->query("INSERT INTO users SET "
 			. "email ='$email'," 
 			. "username = '$username',"
-			. "password = 'hashedPassword',"
+			. "password = '$hashedPassword',"
 			. "salt = '$salt'");
 	if($query) {
 		echo "Successfully created user: $username";
 	}
 	else {
-		echo "<p>" . $_SESSION["connection"]->error . "</p>";
-	}
+	 echo "<p>" . $_SESSION["connection"]->error . "</p>";
+}

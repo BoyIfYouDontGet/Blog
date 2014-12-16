@@ -15,11 +15,11 @@
 <form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
 	<div>
 		<label for="title"> Title: </label>
-		<input type="text" name="title"/>
+		<input type="text" name="title" placeholder="Title" />
 	</div>
 	<div>
 		<label for="post"> Post: </label>
-		<textarea name="post"></textarea>
+		<textarea name="post" placeholder="Post" ></textarea>
 	</div>
 	<div>
 		<button type="submit">Submit</button>

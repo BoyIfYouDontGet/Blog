@@ -20,7 +20,7 @@ require_once(__DIR__ . "/../model/config.php");
 
 <div>
 <label for="password"> Password:</label>
-<input type"password" name="password" />  
+<input type="password" name="password" />  
    </div>
 <div>
 <button type="submit">Submit</button>
