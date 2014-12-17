@@ -3,7 +3,7 @@
 require_once(__DIR__ . "/../model/config.php");
 // created divs so that the user needs to log in to post on my website. The 3 things they need to input are their email username and password. Then the submit button submits all the information
  // this form is to register a user 
- // the form sends the information to another file that then sends it to database
+ // the form sends   the information to another file that then sends it to database
 ?>
 
 <h1> Register </h1>
