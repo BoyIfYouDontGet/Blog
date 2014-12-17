@@ -13,6 +13,10 @@ body {
 }
 h1 {
 	text-align: center;
+	border-bottom: 3px solid black;
+	padding-bottom: 5px;
+	margin-left: 300px ;
+	margin-right: 300px;
 }
 div {
 	text-align: left;
