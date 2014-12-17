@@ -1,15 +1,15 @@
 <?php
 	
 	require_once(__DIR__ . "/../model/config.php");
-	require_once(__DIR__ . "/../controller/login-verify.php");
+        require_once(__DIR__ . "/../controller/login-verify.php");
 
 // this if statement checks if users are authenticated
 // they also redirect people that are not registered to the index page
-	if (!authenticateUser()) {
-		header("Location: ".$path ."index.php");
-		die();	
-	}
-?>
+        if (!authenticateUser()) {
+            header("Location: " . $path . "index.php");
+            die();
+        }
+        ?>
 <h1> <p>Create  Blog post</p><p><small>-Developer </small></p> </h1>
 
 <form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
