@@ -10,7 +10,7 @@
             die();
         }
         ?>
-<h1> <p>Create Blog post</p><p><small>-Tech Guy </small></p> </h1>
+<h1> <p>Create Blog post</p><p><small>-Tech Guys </small></p> </h1>
 
 <form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
 	<div>
