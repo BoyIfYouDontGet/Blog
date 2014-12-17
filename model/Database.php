@@ -25,7 +25,7 @@ class Database
         $exists = $this->connection->select_db($database);
         // kills the program if there is a connection error.
         if (!$exists) {
-            // sending commands to the database
+            // sending commands to the Database
             $query = $this->connection->query("CREATE DATABASE $database");
             if ($query) {
                 echo "Successfully created database: " . $database . "</p>";
