@@ -15,7 +15,7 @@ if($query) {
 	echo "<p>Successfully inserted post : $title</p>";
 	echo  "Posted on:" . $date->format("m/d/y")  . " at " . $time->format("G:i"); 	
 }
-// if query wasnt successful the else statement would be done
+// if query wasnt succ essful the else statement would be done
 else {
 	echo "<p>" . $_SESSION["connection"]->error . "</p>";
 }
