@@ -9,6 +9,7 @@
 
     </head>
     <body>
+    <h1> My Blog project</h1>
         <article>
             <img width="500" height="auto" align="right" src="http://fc03.deviantart.net/fs70/f/2012/081/8/0/futuristic_city_4_by_rich35211-d4ssxt3.jpg">
         </article>
